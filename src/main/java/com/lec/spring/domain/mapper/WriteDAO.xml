@@ -50,7 +50,8 @@
 		parameterType="com.lec.spring.domain.WriteDTO">
 		
 		UPDATE test_write
-		SET wr_subject = #{subject}, wr_content = #{content}
+		SET
+			wr_subject = #{subject}, wr_content = #{content}
 		WHERE wr_uid = #{uid}
 				
 	</update>
